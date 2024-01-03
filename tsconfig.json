@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "paths": {
+      "@cede/types": ["../../core/types"]
+    }
+  },
+  "include": ["svg.d.ts", "src/**/*", "src/**/*.json"],
+  "references": [{ "path": "../../core/types" }]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@cedelabs/widgets",
+  "version": "0.4.0",
+  "homepage": ".",
+  "main": "dist/widgets.mjs",
+  "module": "dist/widgets.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "build:test": "vite build",
+    "build:tsc": "tsc --build",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "NODE_OPTIONS=--max_old_space_size=4096 storybook build"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  },
+  "devDependencies": {
+    "@mui/styles": "^5.12.3",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "5.10.5",
+    "react-shadow": "^20.4.0",
+    "@cede/ds": "*",
+    "@cedelabs/providers": "*",
+    "@cedelabs/react-utils": "*",
+    "@cede/utils": "*",
+    "@cede/types": "*"
+  },
+  "peerDependencies": {
+    "react": "18.x",
+    "react-dom": "18.x"
+  }
+}
